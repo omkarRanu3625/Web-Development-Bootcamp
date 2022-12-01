@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadows and Text Shadows</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            margin: 4px 12px;
+            padding: 12px 8px;
+            /* border: 3px solid blueviolet; */
+            background-color: burlywood;
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            /* box-shadow: 3px 4px green; */
+            /* box-shadow: -6px -5px green; */
+            /* box-shadow: 4px 3px 8px  green; */
+            /* box-shadow: -4px -3px 8px 33px green; */
+            /* box-shadow: inset 4px 6px green; */
+            box-shadow: 4px 6px green, 5px 7px red;
+        }
+        .card h2{
+            /* text-shadow: 3px 4px red; */
+            /* text-shadow: 3px 2px 2px white; */
+            text-shadow: -3px -2px 2px white;
+        }    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+           <h2>this is Html Course</h2> 
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, sit? Atque aliquid consectetur dolor minima illo culpa numquam modi, iste nobis labore perferendis itaque, beatae, inventore ratione. Nobis tempora cupiditate distinctio autem quaerat nulla.
+            </p>
+        </div>
+        <div class="card" id="card-2">
+           <h2>This is CSS Course</h2>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos modi nulla obcaecati id praesentium voluptates libero minus. Inventore deserunt, veritatis, harum necessitatibus dolores autem similique velit, debitis et recusandae dignissimos maiores est optio totam?</p> 
+        </div>
+        <div class="card" id="card-3">
+           <h2>This is JavaScript course</h2> 
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptatem iusto impedit quibusdam, magni praesentium ipsum vel ut, ipsa accusantium rerum hic quasi perferendis quaerat quidem quo veritatis neque cupiditate, magnam nihil illum nulla?</p>
+        </div>
+    </div>
+</body>
+</html>

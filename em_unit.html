@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Units</title>
+    <style>
+        html{
+            font-size: 7px;
+        }
+        h1{
+            text-align: center;
+            font-size: 10px;
+        } 
+        .container{
+            font-size: 10px;
+            border: 3px solid blue;
+            /* vh- 
+               It stands for viewport height.
+               vh is equal to the 1/100 times of the viewport height.
+               Example: Suppose height of the browser is 1000px, so 1vh is equaled to (1/100)*1000= 10px. */
+            height: 100vh;
+            /* vw-
+               It stands for viewport width.
+               Similar to vh, vw is equal to the 1/100 times of the viewport width.
+               Example: Suppose width of the browser is 1000px, so 1vw is equaled to (1/100)*1000= 10px. */
+            width: 100vw;
+        }
+        /* em- 
+          Font-sizes are inherited relative to the parent element.
+          10em means ten times of the parent element. */
+        /* #first{
+            font-size: 10em;
+        }  */
+        /* rem-
+           Font-size gets set according to the font-size of the root element.
+           In general, <html> is the root element.
+           In rem, "r" stands for "root." */
+        /* #second{
+            font-size: 4rem;
+        }    */
+</style>
+        
+</head>
+<body>
+    <div class="container">
+   <h1 id="first">This is first heading</h1>
+   <h1 id="second">This is second heading </h1>
+   <h1 id="third">This is third heading</h1>
+</div>
+</body>
+</html>

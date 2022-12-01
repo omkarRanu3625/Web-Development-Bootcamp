@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo selector </title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+        header::before{
+            content: "";
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+            
+        }
+        section{
+            /* border: 3px solid red; */
+            margin: 3px 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 4px 12px;
+            text-align: center;
+        }
+        /* section::before{
+            content: "This is a content:";
+        } */
+        /* section::after{
+            content: "This is a content:";
+        } */
+        .navigation{
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 23px;
+        }
+        .container{
+            display: flex;
+            
+        }
+        h1{
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="items" id="item-1">Home</li>
+                <li class="items" id="item-2">About Us</li>
+                <li class="items" id="item-3">Services</li>
+                <li class="items" id="item-4">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to in this world</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed magnam adipisci ratione exercitationem reprehenderit cumque harum eaque incidunt perspiciatis nobis commodi porro odit necessitatibus at fugit officiis, autem laboriosam id?
+            Maxime blanditiis eveniet dolore quam autem labore aspernatur deserunt mollitia amet ea eos laborum quisquam hic saepe dignissimos omnis, fugiat sunt culpa, reiciendis excepturi cumque? Ut architecto eius cupiditate fuga?
+        </p>
+    </section>
+    
+</body>
+</html>
